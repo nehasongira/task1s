@@ -1,22 +1,21 @@
 package com.stackroute.domain;
 
 public class Actor {
+
     private String name;
     private String gender;
     private int age;
 
-    public void setname(String name)
-    {
-        this.name=name;
+    public Actor(String name, String gender, int age) {
+        this.name = name;
+        this.gender = gender;
+        this.age = age;
     }
-    public void setgender(String gender)
-    {
-        this.gender=gender;
-    }
-    public void setage(int age)
-    {
-        this.age=age;
-    }
+
+
+   public Actor()
+   {}
+
     public void prints()
     {
             System.out.println("name"+" "+name+" "+"gender"+" "+gender+" "+"age"+" "+age);
