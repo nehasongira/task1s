@@ -15,5 +15,8 @@
         <property name="actor" ref="actor"/>
 
     </bean>
+    <bean class="com.stackroute.demo.BeanLifecycleDemoBean" id="BEAN" init-method="customInit" destroy-method="customDestroy">
+        <property name="name"  value="hello this is bean"/>
+    </bean>
 
 </beans>
